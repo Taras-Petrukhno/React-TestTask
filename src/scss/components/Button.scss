@@ -1,0 +1,35 @@
+@use '../modules/vars' as *;
+@use '../modules/functions' as *;
+
+.btn {
+    display: block;
+    background-color: $c-primary;
+    color: $c-dark;
+    border-radius: rem(80px);
+    min-width: rem(100px);
+    cursor: pointer;
+    
+    
+    & > * {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: rem(4px);
+        text-align: center;
+    }
+    
+    &_hover {
+        background: #FFE302;
+    }
+
+    &_disable {
+        background: #B4B4B4;
+        color: rgba(255, 255, 255, 0.87);
+        pointer-events: none;
+        
+    }
+    &_maxi {
+        min-width: rem(120px);
+    }
+    
+}

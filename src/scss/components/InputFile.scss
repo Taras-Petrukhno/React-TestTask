@@ -1,0 +1,59 @@
+@use '../modules/vars' as *;
+@use '../modules/functions' as *;
+@use '../modules/mixins' as *;
+
+
+.input-file__label {
+    border: 1px solid #D0CFCF;
+    border-radius: rem(4px);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.input-file_error .input-file__label {
+    border: 2px solid #CB3D40;
+}
+
+.input-file__input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.input-file__btn {
+    padding: rem(14px) rem(15px);
+    border: 1px solid $c-dark;
+    border-radius: rem(4px) 0 0 rem(4px);
+
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    pointer-events: none;
+}
+
+.input-file_error .input-file__btn {
+    border: none;
+    border-right: 2px solid #CB3D40;
+}
+
+.input-file__helper-text {
+    position: absolute;
+    left: rem(14px);
+    top: calc(100% + rem(4px));
+
+    font-size: rem(12px);
+    line-height: rem(14px);
+}
+
+.input-file_error .input-file__helper-text {
+    color:  #CB3D40;
+}
+
+.input-file__screen {
+    padding: rem(14px) rem(16px);
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

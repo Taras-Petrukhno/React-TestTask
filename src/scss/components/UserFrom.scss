@@ -1,0 +1,41 @@
+@use '../modules/vars' as *;
+@use '../modules/functions' as *;
+@use '../modules/mixins' as *;
+
+.user-form {
+    max-width: rem(380px);
+    width: 100%;
+}
+
+.user-form__main-info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(50px);
+    margin-bottom: rem(43px);
+}
+
+.user-form__position {
+    display: flex;
+    flex-direction: column;
+    gap: rem(7px);
+    margin-bottom: rem(47px);
+}
+
+.user-form__position-title {
+    margin-bottom: rem(4px);
+}
+
+.user-form__file {
+    margin-bottom: rem(50px);
+}
+
+.user-form__btn {
+   width: min-content;
+   margin: 0 auto;
+}
+
+.user-form__position-empty {
+    text-align: center;
+    color: #7E7E7E;
+}
+

@@ -1,0 +1,10 @@
+@use "sass:math";
+
+@function unitLess($value) {
+    @return math.div($value, ($value * 0 + 1));  //return value without units
+};
+
+@function rem($pxValue) {
+    @return math.div(unitLess($pxValue), unitLess(16px)) * 1rem; //convert px to rem
+}
+

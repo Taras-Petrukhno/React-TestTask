@@ -1,0 +1,13 @@
+@use '../modules/vars' as *;
+@use '../modules/functions' as *;
+@use '../modules/mixins' as *;
+
+.image-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.image-loading__img_hidden {
+    display: none;
+}

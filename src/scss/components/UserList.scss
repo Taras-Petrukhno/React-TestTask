@@ -1,0 +1,54 @@
+@use '../modules/vars' as *;
+@use '../modules/functions' as *;
+@use '../modules/mixins' as *;
+
+.user-list {
+    display: grid;
+    width: 100%;
+    gap: rem(20px);
+    margin-bottom: rem(50px);
+   
+    @include min(md) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: rem(16px);
+    }
+
+    @include min(lg) {
+        grid-template-columns: repeat(3,  minmax(0, 1fr));
+        gap: rem(29px);
+    }
+}
+
+.user-list__user-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(20px);
+    padding: rem(20px);
+    background-color: #FFFF;
+    color: $c-dark;
+    border-radius: rem(10px);
+}
+
+.user-list__user-avatar {
+    height: rem(70px);
+    width: rem(70px);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user-list__user-contacts {
+    max-width: 100%;
+    
+    & > * {
+        max-width: 100%;
+        width: min-content;
+        margin: 0 auto;
+    }
+}
+
+.user-list__empty {
+    grid-column: span 3;
+    text-align: center;
+    color: #7E7E7E;
+}

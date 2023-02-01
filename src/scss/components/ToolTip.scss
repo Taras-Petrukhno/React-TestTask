@@ -1,0 +1,28 @@
+@use '../modules/vars' as *;
+@use '../modules/functions' as *;
+@use '../modules/mixins' as *;
+
+.tool-tip {
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+.tool-tip__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tool-tip:hover:before {
+    content: attr(data-tip);
+    position: absolute;
+    padding: rem(3px) rem(16px);
+    background: $c-dark;
+    color: #FFFF;
+    top: calc(100% + rem(21px));
+    left: calc(97.2%);
+    transform: translateX(-50%);
+    z-index: 1;
+}

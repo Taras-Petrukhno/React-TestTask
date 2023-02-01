@@ -1,0 +1,12 @@
+@use './vars' as *;
+@use './functions' as *;
+
+.title {
+font-family: 'Nunito', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: rem(40px);
+line-height: rem(40px);
+color: inherit;
+}
+

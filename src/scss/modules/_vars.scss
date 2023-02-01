@@ -1,0 +1,37 @@
+@use '_functions' as *;
+// Breakpoints
+
+$breakpoints-min: (// for mobile first
+  sm: rem(360px),
+  md: rem(768px),
+  lg: rem(1024px),
+  xl: rem(2560px),
+);
+
+$breakpoints-max: (// for desktop first
+    sm: rem(767.98px),
+    md: rem(1034.98px),
+    lg: rem(2559.98px)
+);
+
+// Colors
+
+$c-primary: #F4E041;
+$c-secondary: #00BDD3;
+$c-light: #F8F8F8;
+$c-dark: rgba(0, 0, 0, 0.87);
+
+
+// Sizes
+
+$container: rem(1202px); //add 32px to container
+$container-padding: rem(16px);
+
+// main values for body
+
+$m-font-size: rem(16);
+$m-line-height: rem(26);
+$m-font-family: "Nunito", sans-serif;
+$m-font-weight: 400;
+$m-color: $c-dark;
+$m-bg-color: $c-light;
