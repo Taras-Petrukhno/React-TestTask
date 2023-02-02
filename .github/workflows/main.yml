@@ -9,10 +9,10 @@ jobs:
       uses: actions/checkout@v3
     - name: Install all dependencies
       run: npm ci 
-    - name: Build the app
-      run: npm run build
     - name: Treating warnings as errors because process.env.CI = true. Change to false
       run: CI=""
+    - name: Build the app
+      run: npm run build
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
