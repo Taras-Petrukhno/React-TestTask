@@ -10,7 +10,7 @@ jobs:
     - name: Install all dependencies
       run: npm ci 
     - name: Build the app
-      run: CI=false && npm run build
+      run: CI=false npm run build
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
