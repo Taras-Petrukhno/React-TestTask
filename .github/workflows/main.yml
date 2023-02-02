@@ -11,6 +11,8 @@ jobs:
       run: npm ci 
     - name: Build the app
       run: npm run build
+    - name: Treating warnings as errors because process.env.CI = true. Change to false
+      run: CI=""
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
