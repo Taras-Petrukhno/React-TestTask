@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15e324ef.css",
+    "main.js": "/static/js/main.d029aa5c.js",
+    "static/media/ukrainian-style-field.jpeg": "/static/media/ukrainian-style-field.be7665f876bbd9138501.jpeg",
+    "static/media/Nunito-Medium.woff2": "/static/media/Nunito-Medium.8df3354320fef5490134.woff2",
+    "static/media/Nunito-Regular.woff2": "/static/media/Nunito-Regular.08d796f9635ea73e67b1.woff2",
+    "static/media/logo.svg": "/static/media/logo.8bb55362d01d55393ccc5476d96f0c14.svg",
+    "index.html": "/index.html",
+    "main.15e324ef.css.map": "/static/css/main.15e324ef.css.map",
+    "main.d029aa5c.js.map": "/static/js/main.d029aa5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15e324ef.css",
+    "static/js/main.d029aa5c.js"
+  ]
+}
